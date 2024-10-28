@@ -5,17 +5,17 @@ public class proyectopila {
     int[] pila;
     int tope, tamaño;
 
-    // Constructor de la clase
+   
     proyectopila(int tamaño) {
-        // Guardar el tamaño dado
+      
         this.tamaño = tamaño;
-        // Inicializar el vector
+        
         pila = new int[tamaño];
-        // Inicializar el tope en -1, indica que está vacía
+      
         tope = -1;
     }
 
-    // Método para apilar o insertar en la pila
+    
     void apilar(int valor) {
         if (tope == tamaño - 1) {
             System.out.println("La pila está llena");
@@ -25,7 +25,7 @@ public class proyectopila {
         }
     }
 
-    // Método para desapilar
+    
     int desapilar() {
         if (tope == -1) {
             System.out.println("La pila está vacía");
@@ -35,7 +35,6 @@ public class proyectopila {
         }
     }
 
-    // Método para obtener el Tope de la pila
     int obtenerTope() {
         if (tope == -1) {
             System.out.println("La pila está vacía");
@@ -45,7 +44,7 @@ public class proyectopila {
         }
     }
 
-    // Método para mostrar los elementos de la pila
+    
     void mostrarElementos() {
         if (tope == -1) {
             System.out.println("La pila está vacía");
@@ -58,22 +57,22 @@ public class proyectopila {
         }
     }
 
-    // Método para verificar si la pila está vacía
+  
     boolean isEmpty() {
         return tope == -1;
     }
 
-    // Método para verificar si la pila está llena
+    
     boolean isFull() {
         return tope == tamaño - 1;
     }
 
-    // Método para obtener el tamaño de la pila
+    
     int obtenerTamaño() {
-        return tope + 1; // El tamaño es el índice del tope + 1
+        return tope + 1; 
     }
 
-    // Método para vaciar la pila
+    
     void vaciarPila() {
         tope = -1;
         System.out.println("La pila ha sido vaciada.");
